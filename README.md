@@ -406,7 +406,7 @@ Calling the Function
 To use the function, you call it with the required arguments:
 
 
-#Example of calling the add_numbers function
+# Example of calling the add_numbers function
 
 result = add_numbers(5, 7)
 print("The sum is:", result)
@@ -417,7 +417,7 @@ Complete Example
 Here's the full code with function definition and an example call:
 
 
-#Function definition
+# Function definition
 
 def add_numbers(a, b):
     """
@@ -425,7 +425,7 @@ def add_numbers(a, b):
     """
     return a + b
 
-#Example of calling the function
+# Example of calling the function
 
 result = add_numbers(5, 7)
 print("The sum is:", result)
@@ -459,7 +459,7 @@ Differences Between Lists and Dictionaries in Python
      my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
      ```
 
-###Example Script
+### Example Script
 
 Here's a script that creates a list of numbers and a dictionary with some key-value pairs, and demonstrates basic operations on both.
 
@@ -507,7 +507,7 @@ print("Dictionary after deleting city:", person)
 print("Name:", person['name'])
 ```
 
-###Explanation of the Script
+### Explanation of the Script
 
 1. **Creating a List**:
    - `numbers = [1, 2, 3, 4, 5]`: Initializes a list of numbers.
@@ -547,11 +547,11 @@ Name: Alice
 8. Exception Handling:
    - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
 
-###Exception Handling in Python
+### Exception Handling in Python
 
 Exception handling in Python is a way to manage errors gracefully during program execution, allowing the program to handle unexpected situations and continue running or terminate in a controlled manner. Python uses `try`, `except`, `else`, and `finally` blocks to manage exceptions.
 
-####Key Components of Exception Handling:
+#### Key Components of Exception Handling:
 
 1. **`try` block**:
    - This block contains the code that might raise an exception.
@@ -595,7 +595,7 @@ print("\nTest case 2: Invalid file path")
 read_file('nonexistent.txt')
 ```
 
-###Explanation of the Script
+### Explanation of the Script
 
 1. **Function Definition**:
    - `def read_file(file_path):` defines a function to read the contents of a file specified by `file_path`.
@@ -610,7 +610,7 @@ read_file('nonexistent.txt')
 4. **`finally` Block**:
    - `finally:` contains code that always executes, regardless of whether an exception was raised or not. It attempts to close the file if it was successfully opened. The inner `try` block is used to catch a `NameError` if the file was never opened, ensuring the program doesn't crash when trying to close an unopened file.
 
-###Test Cases
+### Test Cases
 
 1. **Test Case 1: Valid File Path**:
    ```python
@@ -624,7 +624,7 @@ read_file('nonexistent.txt')
    ```
    - This case assumes `nonexistent.txt` does not exist. It will raise a `FileNotFoundError`, print an error message, and attempt to close the file, which was never opened.
 
-###Output
+### Output
 
 The script will produce the following output:
 
@@ -649,19 +649,19 @@ This example demonstrates how to use `try`, `except`, and `finally` blocks to ha
 
 In Python, modules and packages are mechanisms for organizing and reusing code. They help in maintaining clean and manageable codebases by allowing you to split your code into smaller, logical units and reuse them across multiple projects.
 
-###Modules
+### Modules
 
 A module is a Python file containing Python definitions, statements, and functions. These files have a `.py` extension and can be imported into other Python scripts. Modules allow you to logically organize your Python code into reusable units.
 
-###Packages
+### Packages
 
 A package is a collection of related modules organized in a directory structure. A package contains an `__init__.py` file (which can be empty) to indicate that the directory should be treated as a package. Packages help in hierarchical organization and prevent naming conflicts.
 
-###Importing and Using Modules
+### Importing and Using Modules
 
 You can import a module into your Python script using the `import` statement. Once imported, you can access functions, variables, and classes defined in the module using dot notation (`module_name.function_name`).
 
-###Example Using the `math` Module
+### Example Using the `math` Module
 
 The `math` module provides mathematical functions and constants for performing mathematical operations in Python.
 
@@ -674,14 +674,14 @@ print("Value of pi:", math.pi)
 print("Factorial of 5:", math.factorial(5))
 ```
 
-###Explanation
+### Explanation
 
 - **`import math`**: Imports the `math` module into the current script, allowing access to its functions and constants.
 - **`math.sqrt(16)`**: Calculates the square root of 16 using the `sqrt` function from the `math` module.
 - **`math.pi`**: Accesses the value of pi (π) constant defined in the `math` module.
 - **`math.factorial(5)`**: Calculates the factorial of 5 using the `factorial` function from the `math` module.
 
-###Output
+### Output
 
 The script will produce the following output:
 
@@ -700,7 +700,7 @@ This example demonstrates how to import and use the `math` module in Python to p
 
 Reading from and writing to files in Python is straightforward using built-in functions and methods provided by the language.
 
-###Reading from a File
+### Reading from a File
 
 You can read from a file in Python using the `open()` function to open a file object and then using methods like `read()`, `readline()`, or `readlines()` to read the content.
 
@@ -717,7 +717,7 @@ print("File Content:")
 print(content)
 ```
 
-###Writing to a File
+### Writing to a File
 
 You can write to a file in Python using the `open()` function with the appropriate mode (e.g., `'w'` for write mode) and then using methods like `write()` to write content to the file.
 
@@ -734,7 +734,7 @@ with open('output.txt', 'w') as file:
         file.write(line)
 ```
 
-###Explanation
+### Explanation
 
 - **Reading from a File**:
   - `open('example.txt', 'r')`: Opens the file named `example.txt` in read mode.
@@ -746,7 +746,7 @@ with open('output.txt', 'w') as file:
   - `file.write(line)`: Writes each line from the list to the file.
   - The `with` statement ensures that the file is properly closed after writing.
 
-###Output
+### Output
 
 Assuming the file `example.txt` contains the following content:
 ```
